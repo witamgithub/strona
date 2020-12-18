@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            window.onload = function liczby() {
+                var start;
+                var koniec;
+                while(start != parseInt(start)) {
+                    start = prompt("Podaj liczbe poczatkowa");
+                }
+                while(koniec != parseInt(koniec)) {
+                    koniec = prompt("Podaj liczbe koncowa");
+                }
+                var string = "";
+                if(start < koniec) {
+                    for(var i = start; i <= koniec; i++) {
+                        string += " " + i;
+                    }
+                } else {
+                    for(var i = start; i >= koniec; i--) {
+                        string += " " + i;
+                    }
+                }
+                document.getElementById("wynik").innerHTML = string;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container">     <div id="banner">
+            <a href="opis.html"><img src="baner2.jpg" width=100% /></a>
+        </div>
+            <div id="lewe"> 
+                <div id="menu">
+                    <nav>
+                        <ul>
+                            <a href="opis.html" ><li>Opis</li></a>
+                            <a href="jakatoliczba.html" ><li>Jaka to liczba?</li></a>
+                            <a href="liczbycalkowite.html" ><li>Liczby calkowite z zakresu</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="prawe">
+                <div id="zawartosc">
+                    <p id="wynik"></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html
